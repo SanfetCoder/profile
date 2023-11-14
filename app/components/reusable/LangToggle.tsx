@@ -1,6 +1,11 @@
 import React from 'react'
 
-const LangToggle = ({value, options, setValue}) => {
+const LangToggle : React.FC<{
+  value : string,
+  options : string[],
+  setValue : (value : string) => void
+}>
+ = ({value, options, setValue}) => {
 
   const handleToggle = () => {
     if (value === options[0]) setValue(options[1]);

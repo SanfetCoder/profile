@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react"
+import { ReactComponentElement, ReactNode, useState } from "react"
 import LangToggle from "./components/reusable/LangToggle";
 import styles from './app.module.css';
 
@@ -17,7 +17,9 @@ export default function Home() {
   )
 }
 
-const NavBar = ({children}) => {
+const NavBar : React.FC<{
+  children : ReactNode
+}> = ({children}) => {
   return (
     <nav className="flex flex-row justify-between text-white ">
       {children}
@@ -35,7 +37,9 @@ const Logo = () => {
   )
 }
 
-const Hero = ({language}) => {
+const Hero : React.FC<{
+  language : string
+}> = ({language}) => {
   return (
     <div className="flex flex-row text-white mt-[7rem]">
       <div className="flex flex-col justify-center w-2/3">
