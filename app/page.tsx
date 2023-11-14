@@ -46,8 +46,8 @@ const Hero = ({language}) => {
         }
         <h1 className="underline decoration-red-400 decoration-5 text-4xl mt-5">Full-stack developer</h1>
         <div className="flex flex-row gap-x-10 mt-10">
-          <button className="btn bg-red-400 border-none text-white text-lg w-[10rem] h-[4rem] rounded-full hover:scale-110 hover:bg-red-400">{language === 'en' ? 'Hire me' : 'ว่าจ้าง'}</button>
-          <button className="btn rounded-full w-[10rem] h-[4rem] text-lg hover:scale-110">{language === 'en' ? 'My works' : 'ผลงาน'}</button>
+          <button className="btn bg-red-400 border-none text-white text-lg w-[10rem] h-[4rem] rounded-full hover:scale-110 hover:bg-red-400 transition-all">{language === 'en' ? 'Hire me' : 'ว่าจ้าง'}</button>
+          <button className="btn bg-gray-200 text-black rounded-full w-[10rem] h-[4rem] text-lg hover:scale-110 transition-all">{language === 'en' ? 'My works' : 'ผลงาน'}</button>
         </div> 
       </div>
       <img className="w-1/3 rounded-full p-2 bg-red-400 h-1/2 bg-contain" src="https://avatars.githubusercontent.com/u/118830176?v=4" alt="" />
