@@ -46,7 +46,7 @@ const Hero : React.FC<{
         {language === 'eng' ?
           <h1 className="text-4xl">Hi there <span className={styles.blogTitleEmoji}>👋</span>, I am <span className="text-red-400 font-semibold">Sanphet Songjindasak</span></h1>
         :
-          <h1 className="text-4xl">สวัสดีครับ <span className={styles.blogTitleEmoji}>👋</span>, ผมชื่อ <span className="text-red-400 font-semibold">สรรเพชญสงค์จินดาศักดิ์</span></h1>
+          <h1 className="text-4xl">สวัสดีครับ <span className={styles.blogTitleEmoji}>👋</span>, ผมชื่อ <span className="text-red-400 font-semibold">สรรเพชญ สงค์จินดาศักดิ์</span></h1>
         }
         <h1 className={`underline decoration-red-400 decoration-5 text-4xl mt-5 ${styles.typingContainer}`}>Full-stack developer</h1>
         <div className="flex flex-row gap-x-10 mt-10">
