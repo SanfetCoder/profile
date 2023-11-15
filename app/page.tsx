@@ -4,6 +4,7 @@ import LangToggle from "./components/reusable/LangToggle";
 import styles from './app.module.css';
 import { TechStack } from "./components/app/TechStack";
 import AboutMe from "./components/app/AboutMe";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -65,7 +66,7 @@ const Hero : React.FC<{
           <button className="btn bg-gray-200 text-black rounded-full w-[10rem] h-[4rem] text-lg hover:scale-110 transition-all">{language === 'eng' ? 'My works' : 'ผลงาน'}</button>
         </div> 
       </div>
-      <img className={`w-1/3 rounded-full p-2 bg-red-400 h-1/2 bg-contain ${styles.animationFloating}`} src="https://avatars.githubusercontent.com/u/118830176?v=4" alt="" />
+      <Image className={`w-1/3 rounded-full p-2 bg-red-400 h-1/2 bg-contain ${styles.animationFloating}`} src="https://avatars.githubusercontent.com/u/118830176?v=4" alt="" />
     </div>
   )
 }
