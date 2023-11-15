@@ -48,7 +48,7 @@ const Hero : React.FC<{
         :
           <h1 className="text-4xl">สวัสดีครับ <span className={styles.blogTitleEmoji}>👋</span>, ผมชื่อ <span className="text-red-400 font-semibold">สรรเพชญสงค์จินดาศักดิ์</span></h1>
         }
-        <h1 className="underline decoration-red-400 decoration-5 text-4xl mt-5">Full-stack developer</h1>
+        <h1 className={`underline decoration-red-400 decoration-5 text-4xl mt-5 ${styles.typingContainer}`}>Full-stack developer</h1>
         <div className="flex flex-row gap-x-10 mt-10">
           <button className="btn bg-red-400 border-none text-white text-lg w-[10rem] h-[4rem] rounded-full hover:scale-110 hover:bg-red-400 transition-all">{language === 'eng' ? 'Hire me' : 'ว่าจ้าง'}</button>
           <button className="btn bg-gray-200 text-black rounded-full w-[10rem] h-[4rem] text-lg hover:scale-110 transition-all">{language === 'eng' ? 'My works' : 'ผลงาน'}</button>
