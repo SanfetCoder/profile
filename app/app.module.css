@@ -17,6 +17,19 @@
   
 }
 
+.animationFloating {
+  animation: floating 5s infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
