@@ -3,6 +3,7 @@ import { ReactComponentElement, ReactNode, useState } from "react"
 import LangToggle from "./components/reusable/LangToggle";
 import styles from './app.module.css';
 import { TechStack } from "./components/app/TechStack";
+import AboutMe from "./components/app/AboutMe";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       </NavBar>
       <Hero language={language}/>
       <TechStack language={language}/>
+      <AboutMe />
     </main>
   )
 }
