@@ -8,7 +8,7 @@ import { TechStack } from "./components/app/TechStack";
 export default function Home() {
   const [language, setLanguage] = useState('eng');
   const currentFont = language === 'eng' ? 'poppins' : 'prompt';
-  
+
   return (
     <main className={`bg-[#080716] h-screen w-screen px-24 py-10 overflow-y-scroll font-${currentFont}`}>
       <NavBar>
@@ -44,6 +44,11 @@ const Logo = () => {
 const Hero : React.FC<{
   language : string
 }> = ({language}) => {
+
+  const navigateToFastwork = () => {
+    window.location.assign("https://fastwork.co/user/sanfet");
+  }
+
   return (
     <div className="flex flex-row text-white mt-[7rem]">
       <div className="flex flex-col justify-center w-2/3">
@@ -54,7 +59,7 @@ const Hero : React.FC<{
         }
         <h1 className={`underline decoration-red-400 decoration-5 text-4xl mt-5 ${styles.typingContainer}`}>Full-stack developer</h1>
         <div className="flex flex-row gap-x-10 mt-10">
-          <button className="btn bg-red-400 border-none text-white text-lg w-[10rem] h-[4rem] rounded-full hover:scale-110 hover:bg-red-400 transition-all">{language === 'eng' ? 'Hire me' : 'ว่าจ้าง'}</button>
+          <button onClick={navigateToFastwork} className="btn bg-red-400 border-none text-white text-lg w-[10rem] h-[4rem] rounded-full hover:scale-110 hover:bg-red-400 transition-all">{language === 'eng' ? 'Hire me' : 'ว่าจ้าง'}</button>
           <button className="btn bg-gray-200 text-black rounded-full w-[10rem] h-[4rem] text-lg hover:scale-110 transition-all">{language === 'eng' ? 'My works' : 'ผลงาน'}</button>
         </div> 
       </div>
