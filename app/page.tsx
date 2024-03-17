@@ -38,7 +38,7 @@ const NavBar : React.FC<{
 const Logo = () => {
   return (
     <div className="relative">
-      <h1 className="text-3xl font-semibold">Sanphet</h1>
+      <h1 className="text-3xl font-semibold">Sanfet Coder</h1>
       <span className="bg-red-300 w-[10px] h-[10px] absolute rounded-full right-0 bottom-3 translate-x-4"></span>
     </div>
 
