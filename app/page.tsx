@@ -19,7 +19,7 @@ export default function Home() {
       </NavBar>
       <Hero language={language}/>
       <TechStack language={language}/>
-      <AboutMe />
+      <AboutMe language={language}/>
     </main>
   )
 }
