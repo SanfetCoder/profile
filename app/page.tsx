@@ -5,7 +5,7 @@ import styles from './app.module.css';
 import { TechStack } from "./components/app/TechStack";
 import AboutMe from "./components/app/AboutMe";
 import Image from "next/image";
-
+import MyWorks from "./components/app/MyWorks";
 
 export default function Home() {
   const [language, setLanguage] = useState('eng');
@@ -20,6 +20,7 @@ export default function Home() {
       <Hero language={language}/>
       <TechStack language={language}/>
       <AboutMe language={language}/>
+      <MyWorks language={language}/>
     </main>
   )
 }
