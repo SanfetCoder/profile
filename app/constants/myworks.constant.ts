@@ -41,6 +41,12 @@ export const MYWORKS_ENG = [
         imagePath : "/images/works/project-eleplan-blog.png",
         techStacks : ["NextJS","React","Supabase","Sanity"]
     },
+    {
+        title : "Github profile web scraper",
+        websiteUrl : "https://github-scrape-jmkr.vercel.app/",
+        imagePath : "/images/works/project-github-scraper.png",
+        techStacks : ["Flask","Javascript"]
+    },
 ]
 
 export const MYWORKS_TH = [
@@ -85,5 +91,11 @@ export const MYWORKS_TH = [
         websiteUrl : "https://blog.eleplan.ai",
         imagePath : "/images/works/project-eleplan-blog.png",
         techStacks : ["NextJS","React","Supabase","Sanity"]
+    },
+    {
+        title : "Web Scraping โปรไฟล์ Github",
+        websiteUrl : "https://github-scrape-jmkr.vercel.app/",
+        imagePath : "/images/works/project-github-scraper.png",
+        techStacks : ["Flask","Javascript"]
     },
 ]

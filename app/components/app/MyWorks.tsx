@@ -10,7 +10,8 @@ const techStackImages : any = {
     "Flask" : "https://giulianopertile.com/uploads/post/review-of-flask-from-a-django-developer/flask-logo-version-2.png",
     "MongoDB" : "https://repvue.imgix.net/a9yxc48y3ay5dm2udzwizc2bdyph",
     "FastAPI" : "https://cdn.try.direct/files/8400033b-cf2e-4fc4-ac91-45cadee082ed.svg",
-    "Sanity" : "https://www.sanity.io/static/images/logo_rounded_square.png"
+    "Sanity" : "https://www.sanity.io/static/images/logo_rounded_square.png",
+    "Javascript" : "https://durableprogramming.com/wp-content/uploads/2023/04/JavaScript-logo.png"
 }
 
 const MyWorks : FC<{
@@ -39,7 +40,7 @@ const WorkCard : FC<{
             <h1 className='font-semibold text-xl mt-2'>{work.title}</h1>
             <ul className='flex w-full gap-x-2 mt-3'>
                 {
-                    work.techStacks.map((stack : string) => <Image className='w-max h-[35px] object-cover' src={techStackImages[stack]} alt="tech stack image" width={400} height={400}/>)
+                    work.techStacks.map((stack : string) => <Image key={stack} className='w-max h-[35px] object-cover' src={techStackImages[stack]} alt="tech stack image" width={400} height={400}/>)
                 }
             </ul>
         </a>
