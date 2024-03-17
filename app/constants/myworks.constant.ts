@@ -42,7 +42,7 @@ export const MYWORKS_ENG = [
         techStacks : ["NextJS","React","Supabase","Sanity"]
     },
     {
-        title : "Github profile web scraper",
+        title : "Github profile scraper",
         websiteUrl : "https://github-scrape-jmkr.vercel.app/",
         imagePath : "/images/works/project-github-scraper.png",
         techStacks : ["Flask","Javascript"]

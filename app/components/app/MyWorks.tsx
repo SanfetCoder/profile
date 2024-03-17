@@ -19,7 +19,7 @@ const MyWorks : FC<{
 }> = ({language}) => {
     const works = language === "eng" ? MYWORKS_ENG : MYWORKS_TH
   return (
-    <section className='flex flex-col items-center justify-center mt-16 gap-y-10'>
+    <section id="myWork" className='flex flex-col items-center justify-center mt-16 gap-y-10'>
         <h1 className='text-white text-3xl font-semibold'>{language === 'eng' ? "My Works" : "ผลงาน"}</h1>
         <ul className='grid grid-cols-4 gap-5'>
             {
