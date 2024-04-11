@@ -1,5 +1,6 @@
 import Card from "../reusable/Card";
 import Image from "next/image";
+import {v4} from "uuid";
 
 const frontendImages = [
   "/techstacks/logo-html.png",
@@ -32,13 +33,13 @@ export const TechStack : React.FC<{
   
   return(
     <div className="flex flex-col gap-y-10 items-center mt-16">
-    <h1 className="text-white text-4xl font-normal">{language === 'eng' ? 'Tech Stacks' : 'เทคโนโลยีที่ใช้'}</h1>
-    <section className="flex flex-row gap-x-16">
+    <h1 className="text-white lg:text-4xl text-2xl font-semibold">{language === 'eng' ? 'Tech Stacks' : 'เทคโนโลยีที่ใช้'}</h1>
+    <section className="flex lg:flex-row flex-col gap-y-10 items-center gap-x-16">
       <Card>
         <h1 className="text-red-400 font-bold text-3xl">{language === 'eng' ? 'Front End' : 'หน้าบ้าน'}</h1>
         <div className="grid grid-cols-3 items-center gap-y-10 gap-x-8 mt-10">
           {frontendImages.map(imageSrc => 
-            <Image alt={imageSrc.split("/")[2]} key={crypto.randomUUID()} height={100} width={100} src={imageSrc}/>
+            <Image alt={imageSrc.split("/")[2]} key={v4()} height={100} width={100} src={imageSrc}/>
             )}
         </div>
       </Card>
@@ -46,15 +47,15 @@ export const TechStack : React.FC<{
         <h1 className="text-red-400 font-bold text-3xl">{language === 'eng' ? 'Back End' : 'หลังบ้าน'}</h1>
         <div className="grid grid-cols-3 items-center gap-y-10 gap-x-8 mt-10">
           {backendImages.map(imageSrc => 
-            <Image alt={imageSrc.split("/")[2]} key={crypto.randomUUID()} height={100} width={100} src={imageSrc}/>
+            <Image alt={imageSrc.split("/")[2]} key={v4()} height={100} width={100} src={imageSrc}/>
             )}
         </div>
       </Card>
       <Card>
-        <h1 className="text-red-400 font-bold text-3xl">{language === 'eng' ? 'Tech Stacks' : 'ฐานข้อมูล'}</h1>
+        <h1 className="text-red-400 font-bold text-3xl">{language === 'eng' ? 'Databases' : 'ฐานข้อมูล'}</h1>
         <div className="grid grid-cols-3 items-center gap-y-10 gap-x-8 mt-10">
           {databaseImages.map(imageSrc => 
-            <Image alt={imageSrc.split("/")[2]} key={crypto.randomUUID()} height={100} width={100} src={imageSrc}/>
+            <Image alt={imageSrc.split("/")[2]} key={v4()} height={100} width={100} src={imageSrc}/>
             )}
         </div>
       </Card>

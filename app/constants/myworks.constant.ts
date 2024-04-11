@@ -47,6 +47,13 @@ export const MYWORKS_ENG = [
         imagePath : "/images/works/project-github-scraper.png",
         techStacks : ["Flask","Javascript"]
     },
+    {
+        title : "Thai labor approval",
+        websiteUrl : "https://permit-plus.vercel.app/",
+        imagePath : "/images/works/project-permit-plus.png",
+        techStacks : ["React","Supabase","Omise","NextJS"]
+    },
+    
 ]
 
 export const MYWORKS_TH = [
@@ -97,5 +104,11 @@ export const MYWORKS_TH = [
         websiteUrl : "https://github-scrape-jmkr.vercel.app/",
         imagePath : "/images/works/project-github-scraper.png",
         techStacks : ["Flask","Javascript"]
+    },
+    {
+        title : "เว็บยืนยันแรงงานต่างด้่าวในไทย",
+        websiteUrl : "https://permit-plus.vercel.app/",
+        imagePath : "/images/works/project-permit-plus.png",
+        techStacks : ["React","Supabase","Omise","NextJS"]
     },
 ]

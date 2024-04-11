@@ -13,7 +13,7 @@ const LangToggle : React.FC<{
   }
 
   return (
-    <button onClick={handleToggle} className=" relative border-solid border-[3px] border-red-400 w-[6rem] h-[3rem] rounded-full">
+    <button onClick={handleToggle} className=" relative border-solid lg:border-[3px] border-[2px] border-red-400 w-[6rem] lg:h-[3rem] h-[2.8rem] rounded-full">
       <div className='flex flex-row items-center justify-between px-1.5'>
         {value === 'eng' && <p className='w-1/2 absolute'>{value}</p>}
         <span

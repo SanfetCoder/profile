@@ -17,6 +17,16 @@
   
 }
 
+.typingContainerMobile {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: typing 1.5s steps(200, end), blink-caret 0.5s step-end infinite;
+  width: 230px;
+  height: 30px;
+
+}
+
 .animationFloating {
   animation: floating 5s infinite;
 }

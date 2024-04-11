@@ -4,12 +4,12 @@ const AboutMe: FC<{
   language: string;
 }> = ({ language }) => {
   return (
-    <section className="flex mt-16 w-full justify-between">
-      <ul className="flex flex-col items-start justify-center w-1/2 p-10 gap-y-5">
-        <h1 className="text-white text-3xl font-semibold">
+    <section className="flex lg:flex-row flex-col mt-16 w-full justify-between">
+      <ul className="flex flex-col items-start justify-center lg:w-1/2 w-full p-10 gap-y-5">
+        <h1 className="text-white text-3xl font-semibold mx-auto lg:mx-0">
           {language === "eng" ? "About Me" : "เกี่ยวกับผม"}
         </h1>
-        <p className="text-white text-lg">
+        <p className="text-white text-lg text-center lg:text-left">
           {language === "eng"
             ? "I have an expertise in developing"
             : "ผมมีประสบการณ์การพัฒนา"}{" "}
